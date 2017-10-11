@@ -26,21 +26,6 @@ class FplLib
             [
                 'baseUri' => self::BASE_URL,
                 'operations' => [
-                    'testing' => [
-                        'httpMethod' => 'GET',
-                        'uri' => '/drf/entry{?foo}',
-                        'responseModel' => 'getResponse',
-                        'parameters' => [
-                            'foo' => [
-                                'type' => 'string',
-                                'location' => 'uri',
-                            ],
-                            'bar' => [
-                                'type' => 'string',
-                                'location' => 'query',
-                            ],
-                        ],
-                    ],
                     'playerHistory' => [
                         'httpMethod' => 'GET',
                         'uri' => '/drf/entry/{id}/history',
@@ -56,6 +41,7 @@ class FplLib
                 'models' => [
                     'getResponse' => [
                         'type' => 'object',
+                        'additionalProperties' => ['location' => 'json'],
                     ],
                 ],
             ]

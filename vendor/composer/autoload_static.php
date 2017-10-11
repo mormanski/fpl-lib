@@ -17,6 +17,10 @@ class ComposerStaticInitfdc0ca6df706920829b075cc5e94a77b
         array (
             'Psr\\Http\\Message\\' => 17,
         ),
+        'M' => 
+        array (
+            'Mormanski\\FplLib\\' => 17,
+        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -31,6 +35,10 @@ class ComposerStaticInitfdc0ca6df706920829b075cc5e94a77b
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Mormanski\\FplLib\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (

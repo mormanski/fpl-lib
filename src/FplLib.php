@@ -43,7 +43,7 @@ class FplLib
                     ],
                     'playerHistory' => [
                         'httpMethod' => 'GET',
-                        'uri' => '/drf/entry/{?id}/history',
+                        'uri' => '/drf/entry/{id}/history',
                         'responseModel' => 'getResponse',
                         'parameters' => [
                             'id' => [

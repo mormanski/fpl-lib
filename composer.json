@@ -1,0 +1,19 @@
+{
+    "name": "mormanski/fpl-lib",
+    "type": "library",
+    "description": "PHP library to access the semi hidden fantasy premier league api",
+    "keywords": ["PHP", "library", "api", "Premier league", "epl", "fantasy football"],
+    "homepage": "http://mormanski.net/projects/fpl-api/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Darren Morman",
+            "email": "darrenmorman@gmail.com",
+            "homepage": "https://github.com/mormanski"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "guzzlehttp/guzzle-services": "^1.1"
+    }
+}

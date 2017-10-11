@@ -9,7 +9,7 @@ use GuzzleHttp\Command\Guzzle\Description;
 class FplLib
 {
 
-    CONST BASE_URL = 'http://httpbin.org/';
+    CONST BASE_URL = 'https://fantasy.premierleague.com/';
 
     protected $client;
 
@@ -28,7 +28,7 @@ class FplLib
                 'operations' => [
                     'testing' => [
                         'httpMethod' => 'GET',
-                        'uri' => '/get{?foo}',
+                        'uri' => '/drf/entry{?foo}',
                         'responseModel' => 'getResponse',
                         'parameters' => [
                             'foo' => [
@@ -41,11 +41,21 @@ class FplLib
                             ],
                         ],
                     ],
+                    'playerHistory' => [
+                        'httpMethod' => 'GET',
+                        'uri' => '/drf/entry/{?id}/history',
+                        'responseModel' => 'getResponse',
+                        'parameters' => [
+                            'id' => [
+                                'type' => 'string',
+                                'location' => 'uri',
+                            ],
+                        ],
+                    ],
                 ],
                 'models' => [
                     'getResponse' => [
                         'type' => 'object',
-                        'additionalProperties' => ['location' => 'json'],
                     ],
                 ],
             ]

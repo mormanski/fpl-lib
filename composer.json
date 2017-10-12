@@ -10,12 +10,11 @@
     "epl",
     "fantasy football"
   ],
-  "homepage": "http://mormanski.net/projects/fpl-api/",
-  "license": "MIT",
+  "homepage": "https://github.com/mormanski.net/fpl-lib",
+  "license": "GPL-3.0",
   "authors": [
     {
       "name": "Darren Morman",
-      "email": "darrenmorman@gmail.com",
       "homepage": "https://github.com/mormanski"
     }
   ],

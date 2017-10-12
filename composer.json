@@ -12,6 +12,8 @@
   ],
   "homepage": "https://github.com/mormanski.net/fpl-lib",
   "license": "GPL-3.0",
+  "prefer-stable": true,
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Darren Morman",

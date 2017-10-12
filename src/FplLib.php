@@ -28,10 +28,10 @@ class FplLib
                 'operations' => [
                     'playerHistory' => [
                         'httpMethod' => 'GET',
-                        'uri' => '/drf/entry/{id}/history',
+                        'uri' => '/drf/entry/{entryId}/history',
                         'responseModel' => 'getResponse',
                         'parameters' => [
-                            'id' => [
+                            'entryId' => [
                                 'type' => 'string',
                                 'location' => 'uri',
                             ],

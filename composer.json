@@ -1,7 +1,7 @@
 {
   "name": "mormanski/fpl-lib",
   "type": "library",
-  "description": "PHP library to access the semi hidden fantasy premier league api",
+  "description": "PHP Library to access the undocumented https://fantasy.premierleague.com API ",
   "keywords": [
     "PHP",
     "library",

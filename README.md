@@ -1,8 +1,7 @@
 FplLib, PHP library for the Fantasy Premier League API
 -------------------------------------------------------
 
-FplLib is a PHP Library which makes it easier to access the 
-undocumented https://fantasy.premierleague.com API
+PHP Library to access the undocumented https://fantasy.premierleague.com API
 
 ## Installation
 

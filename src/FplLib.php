@@ -68,6 +68,17 @@ class FplLib
                             ],
                         ],
                     ],
+                    'elementSummary' => [
+                        'httpMethod' => 'GET',
+                        'uri' => '/drf/element-summary/{elementId}',
+                        'responseModel' => 'getResponse',
+                        'parameters' => [
+                            'elementId' => [
+                                'type' => 'string',
+                                'location' => 'uri',
+                            ],
+                        ],
+                    ],
                 ],
                 'models' => [
                     'getResponse' => [

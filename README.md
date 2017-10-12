@@ -13,24 +13,24 @@ API Endpoints
 
 https://fantasy.premierleague.com/drf/bootstrap-static
     
-    $data = $client->bootstrapStatic;
+    $bootstrapStatic = $client->bootstrapStatic();
 
 https://fantasy.premierleague.com/drf/leagues-classic-standings/{leagueId}
 
-    $data = $client->entryPicks(['leagueId' => $leagueId]);
+    $leagueClassicStandings = $client->leagueClassicStandings(['leagueId' => $leagueId]);
 
 https://fantasy.premierleague.com/drf/entry/{entryId}
-
-    $data = $client->entry(['entryId' => $entryId]);
+        
+    $entry = $client->entry(['entryId' => '1234567']);
 
 https://fantasy.premierleague.com/drf/entry/{entryId}/history
 
-    $data = $client->entryHistory(['entryId' => $entryId]);
+    $entryHistory = $client->entryHistory(['entryId' => '1234567']);
     
-https://fantasy.premierleague.com/drf/entry/{id}/event/{gw}/picks
+https://fantasy.premierleague.com/drf/entry/{id}/event/{eventId}/picks
 
-    $data = $client->entryPicks(['entryId' => $entryId]);
+    $data = $client->entryPicks(['entryId' => $entryId, 'eventId' => $eventId]);
 
 https://fantasy.premierleague.com/drf/element-summary/{elementId}
 
-    $data = $client->elementSummary(['elementId' => $elementId]);
+    $elementSummary = $client->elementSummary(['elementId' => '123']);

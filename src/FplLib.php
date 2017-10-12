@@ -79,6 +79,17 @@ class FplLib
                             ],
                         ],
                     ],
+                    'leagueClassicStandings' => [
+                        'httpMethod' => 'GET',
+                        'uri' => '/drf/league-classic-standings/{leagueId}',
+                        'responseModel' => 'getResponse',
+                        'parameters' => [
+                            'leagueId' => [
+                                'type' => 'string',
+                                'location' => 'uri',
+                            ],
+                        ],
+                    ],
                 ],
                 'models' => [
                     'getResponse' => [

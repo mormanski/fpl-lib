@@ -1,9 +1,10 @@
-#FplLib, PHP library for the Fantasy Premier League API
+FplLib, PHP library for the Fantasy Premier League API
+-------------------------------------------------------
 
 FplLib is a PHP Library which makes it easier to access the 
 undocumented https://fantasy.premierleague.com API
 
-##Installation
+## Installation
 
     {
         "repositories": [
@@ -17,14 +18,14 @@ undocumented https://fantasy.premierleague.com API
         }
     }
 
-##Using the library
+## Using the library
 
     use Mormanski\FplLib\FplLib;
 
     $fpl = new FplLib();
     $client = $fpl->getClient();
 
-##API Endpoints
+## API Endpoints
 
 https://fantasy.premierleague.com/drf/bootstrap-static
     
@@ -50,7 +51,7 @@ https://fantasy.premierleague.com/drf/element-summary/{elementId}
 
     $elementSummary = $client->elementSummary(['elementId' => '123']);
     
-##Terminology
+## Terminology
 
 * An entry is equivalent to a contestant in the competition
 * An element is equivalent to a player

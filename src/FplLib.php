@@ -26,7 +26,7 @@ class FplLib
             [
                 'baseUri' => self::BASE_URL,
                 'operations' => [
-                    'playerHistory' => [
+                    'entryHistory' => [
                         'httpMethod' => 'GET',
                         'uri' => '/drf/entry/{entryId}/history',
                         'responseModel' => 'getResponse',

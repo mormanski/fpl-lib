@@ -1,15 +1,17 @@
-About
+FplLib, PHP library for the fantasy football league API
+-------------------------------------------------------
 
-PHP Library to access the undocumented Fantasy Premier League API
+FplLib is a PHP Library which makes it easier to access the 
+undocumented Fantasy Premier League API
 
-Using the library
+##Using the library
 
     use Mormanski\FplLib\FplLib;
 
     $fpl = new FplLib();
     $client = $fpl->getClient();
 
-API Endpoints
+##API Endpoints
 
 https://fantasy.premierleague.com/drf/bootstrap-static
     
@@ -17,7 +19,7 @@ https://fantasy.premierleague.com/drf/bootstrap-static
 
 https://fantasy.premierleague.com/drf/leagues-classic-standings/{leagueId}
 
-    $leagueClassicStandings = $client->leagueClassicStandings(['leagueId' => $leagueId]);
+    $leaguesClassicStandings = $client->leaguesClassicStandings(['leagueId' => '123123']);
 
 https://fantasy.premierleague.com/drf/entry/{entryId}
         
@@ -34,3 +36,9 @@ https://fantasy.premierleague.com/drf/entry/{id}/event/{eventId}/picks
 https://fantasy.premierleague.com/drf/element-summary/{elementId}
 
     $elementSummary = $client->elementSummary(['elementId' => '123']);
+    
+##Terminology
+
+* An entry is equivalent to a user of the site
+* An element is equivalent to a player
+* An event is equivalent to a game week, for instance eventId denotes game week 2.

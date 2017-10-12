@@ -7,7 +7,7 @@ PHP Library to access the undocumented https://fantasy.premierleague.com API
 
 ### Using composer
 
-    composer require mormanski/fpl-lib:master
+    composer require mormanski/fpl-lib
 
 ### Using github repository
 

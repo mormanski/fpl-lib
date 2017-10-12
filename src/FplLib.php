@@ -26,12 +26,43 @@ class FplLib
             [
                 'baseUri' => self::BASE_URL,
                 'operations' => [
+                    'bootstrapStatic' => [
+                        'httpMethod' => 'GET',
+                        'uri' => '/drf/bootstrap-static',
+                        'responseModel' => 'getResponse',
+                    ],
+                    'entry' => [
+                        'httpMethod' => 'GET',
+                        'uri' => '/drf/entry/{entryId}',
+                        'responseModel' => 'getResponse',
+                        'parameters' => [
+                            'entryId' => [
+                                'type' => 'string',
+                                'location' => 'uri',
+                            ],
+                        ],
+                    ],
                     'entryHistory' => [
                         'httpMethod' => 'GET',
                         'uri' => '/drf/entry/{entryId}/history',
                         'responseModel' => 'getResponse',
                         'parameters' => [
                             'entryId' => [
+                                'type' => 'string',
+                                'location' => 'uri',
+                            ],
+                        ],
+                    ],
+                    'entryPicks' => [
+                        'httpMethod' => 'GET',
+                        'uri' => '/drf/entry/{entryId}/event/{eventId}/picks',
+                        'responseModel' => 'getResponse',
+                        'parameters' => [
+                            'entryId' => [
+                                'type' => 'string',
+                                'location' => 'uri',
+                            ],
+                            'eventId' => [
                                 'type' => 'string',
                                 'location' => 'uri',
                             ],

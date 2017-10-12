@@ -1,8 +1,22 @@
-FplLib, PHP library for the fantasy football league API
+FplLib, PHP library for the Fantasy Premier League API
 -------------------------------------------------------
 
 FplLib is a PHP Library which makes it easier to access the 
-undocumented Fantasy Premier League API
+undocumented https://fantasy.premierleague.com API
+
+##Installation
+
+    {
+        "repositories": [
+            {
+                "type": "vcs",
+                "url": "https://github.com/mormanski/fpl-lib"
+            }
+        ],
+        "require": {
+            "mormasnki/fpl-lib": "master"
+        }
+    }
 
 ##Using the library
 
@@ -39,6 +53,6 @@ https://fantasy.premierleague.com/drf/element-summary/{elementId}
     
 ##Terminology
 
-* An entry is equivalent to a user of the site
+* An entry is equivalent to a contestant in the competition
 * An element is equivalent to a player
-* An event is equivalent to a game week, for instance eventId denotes game week 2.
+* An event is equivalent to a game week, for instance eventId => 2 denotes game week 2.

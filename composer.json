@@ -10,7 +10,7 @@
     "epl",
     "fantasy football"
   ],
-  "homepage": "https://github.com/mormanski.net/fpl-lib",
+  "homepage": "https://github.com/mormanski/fpl-lib",
   "license": "GPL-3.0",
   "prefer-stable": true,
   "minimum-stability": "dev",

@@ -16,7 +16,7 @@ class FplLib
     public function __construct()
     {
         $client = new Client([
-            'headers' => ['User-Agent' => 'FplLib/1.0']
+            'headers' => ['User-Agent' => 'FplLib/1.1']
         ]);
         $this->client = new GuzzleClient($client, self::getServiceDescription());
     }

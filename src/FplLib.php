@@ -30,12 +30,12 @@ class FplLib
                 'operations' => [
                     'bootstrapStatic' => [
                         'httpMethod' => 'GET',
-                        'uri' => '/drf/bootstrap-static',
+                        'uri' => '/api/bootstrap-static',
                         'responseModel' => 'getResponse',
                     ],
                     'entry' => [
                         'httpMethod' => 'GET',
-                        'uri' => '/drf/entry/{entryId}',
+                        'uri' => '/api/entry/{entryId}',
                         'responseModel' => 'getResponse',
                         'parameters' => [
                             'entryId' => [
@@ -46,7 +46,7 @@ class FplLib
                     ],
                     'entryHistory' => [
                         'httpMethod' => 'GET',
-                        'uri' => '/drf/entry/{entryId}/history',
+                        'uri' => '/api/entry/{entryId}/history',
                         'responseModel' => 'getResponse',
                         'parameters' => [
                             'entryId' => [
@@ -57,7 +57,7 @@ class FplLib
                     ],
                     'entryPicks' => [
                         'httpMethod' => 'GET',
-                        'uri' => '/drf/entry/{entryId}/event/{eventId}/picks',
+                        'uri' => '/api/entry/{entryId}/event/{eventId}/picks',
                         'responseModel' => 'getResponse',
                         'parameters' => [
                             'entryId' => [
@@ -72,7 +72,7 @@ class FplLib
                     ],
                     'elementSummary' => [
                         'httpMethod' => 'GET',
-                        'uri' => '/drf/element-summary/{elementId}',
+                        'uri' => '/api/element-summary/{elementId}',
                         'responseModel' => 'getResponse',
                         'parameters' => [
                             'elementId' => [
@@ -83,7 +83,7 @@ class FplLib
                     ],
                     'leaguesClassicStandings' => [
                         'httpMethod' => 'GET',
-                        'uri' => '/drf/leagues-classic-standings/{leagueId}',
+                        'uri' => '/api/leagues-classic-standings/{leagueId}',
                         'responseModel' => 'getResponse',
                         'parameters' => [
                             'leagueId' => [

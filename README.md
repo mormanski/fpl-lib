@@ -32,27 +32,27 @@ PHP Library to access the undocumented https://fantasy.premierleague.com API
 
 ## API Endpoints
 
-https://fantasy.premierleague.com/drf/bootstrap-static
+https://fantasy.premierleague.com/api/bootstrap-static
     
     $bootstrapStatic = $client->bootstrapStatic();
 
-https://fantasy.premierleague.com/drf/leagues-classic-standings/{leagueId}
+https://fantasy.premierleague.com/api/leagues-classic-standings/{leagueId}
 
     $leaguesClassicStandings = $client->leaguesClassicStandings(['leagueId' => '123123']);
 
-https://fantasy.premierleague.com/drf/entry/{entryId}
+https://fantasy.premierleague.com/api/entry/{entryId}
         
     $entry = $client->entry(['entryId' => '1234567']);
 
-https://fantasy.premierleague.com/drf/entry/{entryId}/history
+https://fantasy.premierleague.com/api/entry/{entryId}/history
 
     $entryHistory = $client->entryHistory(['entryId' => '1234567']);
     
-https://fantasy.premierleague.com/drf/entry/{id}/event/{eventId}/picks
+https://fantasy.premierleague.com/api/entry/{id}/event/{eventId}/picks
 
     $data = $client->entryPicks(['entryId' => $entryId, 'eventId' => $eventId]);
 
-https://fantasy.premierleague.com/drf/element-summary/{elementId}
+https://fantasy.premierleague.com/api/element-summary/{elementId}
 
     $elementSummary = $client->elementSummary(['elementId' => '123']);
     

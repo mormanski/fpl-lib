@@ -83,7 +83,7 @@ class FplLib
                     ],
                     'leaguesClassicStandings' => [
                         'httpMethod' => 'GET',
-                        'uri' => '/api/leagues-classic-standings/{leagueId}/',
+                        'uri' => '/api/leagues-classic/{leagueId}/standings',
                         'responseModel' => 'getResponse',
                         'parameters' => [
                             'leagueId' => [

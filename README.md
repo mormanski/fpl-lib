@@ -28,33 +28,32 @@ PHP Library to access the undocumented https://fantasy.premierleague.com API
     use Mormanski\FplLib\FplLib;
 
     $fpl = new FplLib();
-    $client = $fpl->getClient();
 
 ## API Endpoints
 
 https://fantasy.premierleague.com/api/bootstrap-static
     
-    $bootstrapStatic = $client->bootstrapStatic();
+    $bootstrapStatic = $fpl->bootstrapStatic();
 
 https://fantasy.premierleague.com/api/leagues-classic-standings/{leagueId}
 
-    $leaguesClassicStandings = $client->leaguesClassicStandings(['leagueId' => '123123']);
+    $leaguesClassicStandings = $fpl->leaguesClassicStandings(123123);
 
 https://fantasy.premierleague.com/api/entry/{entryId}
         
-    $entry = $client->entry(['entryId' => '1234567']);
+    $entry = $fpl->entry(1234567);
 
 https://fantasy.premierleague.com/api/entry/{entryId}/history
 
-    $entryHistory = $client->entryHistory(['entryId' => '1234567']);
+    $entryHistory = $fpl->entryHistory(1234567);
     
 https://fantasy.premierleague.com/api/entry/{id}/event/{eventId}/picks
 
-    $data = $client->entryPicks(['entryId' => $entryId, 'eventId' => $eventId]);
+    $data = $fpl->entryPicks($entryId, $eventId);
 
 https://fantasy.premierleague.com/api/element-summary/{elementId}
 
-    $elementSummary = $client->elementSummary(['elementId' => '123']);
+    $elementSummary = $fpl->elementSummary(123);
     
 ## Terminology
 
